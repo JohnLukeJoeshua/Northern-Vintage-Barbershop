@@ -1,14 +1,14 @@
-5007CEM.CT1.APR2022.IICP: WEB DEVELOPMENT ASSIGNMENT (APRIL 2022 SESSION)
+1. 5007CEM.CT1.APR2022.IICP: WEB DEVELOPMENT ASSIGNMENT (APRIL 2022 SESSION)
 
-This project was created for the Barbershop under the business Northern Vintage Barbershop.
+2. This project was created for the Barbershop under the business Northern Vintage Barbershop.
 
-To run this project, download the code and place it in the \xampp\htdocs.
+3. To run this project, download the code and place it in the \xampp\htdocs.
 
-Start up XAMPP and run Apache and MySQL.
+4. Start up XAMPP and run Apache and MySQL.
 
-Import the databases (northernvintagebarbershop.sql) into PHPMyAdmin.
+5. Import the databases (northernvintagebarbershop.sql) into PHPMyAdmin.
 
-Please ensure to adjust the localhost port accordinly for the database connections files in the admin folder;; the files are as such cconnection.php/dbconnect.php & under the apicrudphp folder database.php
+6. Please ensure to adjust the localhost port accordinly for the database connections files in the admin folder;; the files are as such cconnection.php/dbconnect.php & under the apicrudphp folder database.php
 
 Feel free to contact me if there is an issue
 joeshua1312@gmail.com
