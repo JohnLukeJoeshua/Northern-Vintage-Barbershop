@@ -1,0 +1,849 @@
+
+html,body {
+  height: 100%;
+  font-family: Helvetica;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.site-header { 
+  border-bottom: 1px solid #ccc;
+  padding: .5em 1em;
+}
+
+.site-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-identity {
+  float: left;
+}
+
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: .7em 0 .3em 0;
+  display: inline-block;
+}
+
+.site-identity img {
+  max-width: 55px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.site-navigation {
+  float: right;
+}
+
+.site-navigation ul, li {
+  margin: 0; 
+  padding: 0;
+}
+
+.site-navigation li {
+  display: inline-block;
+  margin: 1.5em 1em 1em 1em;
+}
+
+a:link {
+    color: black }
+a:visited {
+    color: black }
+a:hover{
+    background-color: #E8E8E8;
+    transition: 0.9sec;
+}
+
+
+
+/*Page-Wrapper*/
+.page-wrapper {
+    min-height: 100%;
+}
+  
+/*Bottom Footer*/
+.footer-basic {
+  padding:40px 0;
+  background-color: #ccc;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:10.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid black;
+  margin:0 8px;
+  color:inherit;
+  opacity:10.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:black;
+  margin-bottom:0;
+}
+
+/*Carousel*/
+.carousel-item{
+        height:40rem;
+        background:#777;
+        color:white;
+        position: relative;
+
+    }
+.container{
+        position: absolute;
+        bottom:0;
+        left: 0;
+        right: 0;
+        padding-bottom: 10px;        
+    }
+.overlay-image{
+        position: absolute;
+        bottom:0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-position: center;
+        background-size:cover;
+    }
+
+/*Signature Services*/
+
+.container-fluid{
+    background: #ECE0D1;
+    padding:15px 9%;
+    padding-bottom:100px;
+}
+
+.container-fluid .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color: black;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size:50px;
+}
+
+.container-fluid .box-container-fluid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap:15px;
+}
+
+.container-fluid .box-container-fluid .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.container-fluid .box-container-fluid .box img{
+    height: 80px;
+}
+
+.container-fluid .box-container-fluid .box h3{
+    color:#444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.container-fluid .box-container-fluid .box p{
+    color: #777;
+    font-size: 15px;
+    padding:10px 0;
+    line-height: 1.8;
+}
+
+.container-fluid .box-container-fluid .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.02);
+}
+
+
+/*Appointment Box*/
+.inner-layer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,147,173,0.7);
+	overflow: auto;
+        background: url('../CSS/pexels-mostafa-meraji-3037244.jpg');
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+}
+.form-data{
+	margin-top: 0%;
+	background-color: #FFF;
+	
+}
+.form-body{
+	padding: 20px;
+}
+.form-head{
+	padding: 10px;
+	border-bottom: 1px solid #CCC;
+}
+.form-head h2{
+	font-size: 22px;
+	font-weight: 600;
+}
+.no-margin{
+	margin: 100px;
+}
+
+.form-row{
+	margin-bottom: 15px;
+}
+.form-control{
+	background-color: #f7f7ff;
+	border-radius: 10px;
+
+}
+.form-control:focus{
+	box-shadow: none;
+	border: 3px solid #138496;
+}
+.btn-appointment{
+	background-color: #138496 !important;
+	border-color: #138496 !important;
+	width: 100%;
+        margin-top: 20px;
+}
+.content{
+	text-align:left;
+	color: #FFF;
+	padding: 50px;
+}
+.content h1{
+	font-weight: 600;
+	font-size: 3.5rem;
+}
+.content h2{
+	font-weight: 600;
+	font-size:1.8rem;
+	margin-top: 20px;
+}
+.content p{
+	font-size: 22px;
+	margin-top: 20px;
+}
+.datepicker td, .datepicker th{
+	padding: 5px;
+}
+.dropdown-menu.datepicker{
+	max-width: 300px !important;
+}
+
+
+/*Checkboxes*/
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*Datepicker for Bootstrap*/
+
+.datepicker {
+top: 0;
+left: 0;
+padding: 4px;
+margin-top: 1px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+
+}
+.datepicker:before {
+content: '';
+display: inline-block;
+border-left: 7px solid transparent;
+border-right: 7px solid transparent;
+border-bottom: 7px solid #ccc;
+border-bottom-color: rgba(0, 0, 0, 0.2);
+position: absolute;
+top: -7px;
+left: 6px;
+}
+.datepicker:after {
+content: '';
+display: inline-block;
+border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+border-bottom: 6px solid #ffffff;
+position: absolute;
+top: -6px;
+left: 7px;
+}
+.datepicker > div {
+display: none;
+}
+.datepicker table {
+width: 100%;
+margin: 0;
+}
+.datepicker td, .datepicker th {
+text-align: center;
+width: 40px;
+height: 10px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.datepicker td.day:hover {
+background: #eeeeee;
+cursor: pointer;
+}
+.datepicker td.old, .datepicker td.new {
+color: #999999;
+}
+.datepicker td.active, .datepicker td.active:hover {
+background-color: #006dcc;
+background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+background-image: linear-gradient(top, #0088cc, #0044cc);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
+border-color: #0044cc #0044cc #002a80;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+color: #fff;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.datepicker td.active:hover,
+.datepicker td.active:hover:hover,
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active,
+.datepicker td.active.disabled,
+.datepicker td.active:hover.disabled,
+.datepicker td.active[disabled],
+.datepicker td.active:hover[disabled] {
+background-color: #0044cc;
+}
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active {
+background-color: #003399 \9;
+}
+.datepicker td span {
+display: block;
+width: 47px;
+height: 54px;
+line-height: 54px;
+float: left;
+margin: 2px;
+cursor: pointer;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.datepicker td span:hover {
+background: #eeeeee;
+}
+.datepicker td span.active {
+background-color: #006dcc;
+background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+background-image: linear-gradient(top, #0088cc, #0044cc);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
+border-color: #0044cc #0044cc #002a80;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+color: #fff;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.datepicker td span.active:hover,
+.datepicker td span.active:active,
+.datepicker td span.active.active,
+.datepicker td span.active.disabled,
+.datepicker td span.active[disabled] {
+background-color: #0044cc;
+}
+.datepicker td span.active:active, .datepicker td span.active.active {
+background-color: #003399 \9;
+}
+.datepicker td span.old {
+color: #999999;
+}
+.datepicker th.switch {
+width: 145px;
+}
+.datepicker thead tr:first-child th {
+cursor: pointer;
+}
+.datepicker thead tr:first-child th:hover {
+background: #eeeeee;
+}
+.input-append.date .add-on i, .input-prepend.date .add-on i {
+display: block;
+cursor: pointer;
+width: 16px;
+height: 16px;
+}
+.dropdown-menu.datepicker { max-width:220px }
+
+
+
+/*Contact Us Form*/
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('../CSS/pexels-photo-4449790.jpeg');
+    background-size: cover;
+}
+
+.content-contact
+{
+    max-width: 800px;
+    text-align: center;
+    
+}
+
+.content-contact h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;    
+} 
+
+.content-contact p
+{
+    font-weight: 300;
+    color: #fff;    
+} 
+
+.container-contact
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    border:1px solid black;
+    color:inherit;
+    opacity:10.75;
+}
+
+.contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: white;
+}
+
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 1020px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .content-contact
+    {
+        flex-direction: column;
+    }
+    .content-contact .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .content-contact .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+}
+
+/*Review Feedback Form*/
+
+.main-block, .info-Feedback 
+{
+    display: flex;
+    flex-direction: column;
+}
+.main-block 
+{
+    padding-top: 3%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+}
+.form-Feedback
+{
+    width: 50%; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px; 
+    border: solid 1px #ccc;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    background: #ebebeb; 
+}
+.info-item-Feedback
+{
+    width: 100%;
+}
+      input
+      {
+      width: calc(100% - 57px);
+      height: 36px;
+      padding-left: 10px; 
+      border-radius: 0 5px 5px 0;
+      border: solid 1px #cbc9c9;
+      box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+      background: #fff; 
+      }
+      .icon-Feedback {
+      padding: 9px 15px;
+      margin-top: -1px;
+      border-radius: 5px 0 0 5px;
+      border: solid 0px #cbc9c9;
+      background: #666;
+      color: #fff;
+      }
+      input[type=radio] {
+      display: none;
+      }
+      label.radio-Feedback {
+      position: relative;
+      display: inline-block;
+      text-indent: 32px;
+      cursor: pointer;
+      }
+      label.radio-Feedback:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 0.5px solid #8ebf42;
+      background: #fff;
+      }
+      label.radio-Feedback:after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 4px;
+      top: 5px;
+      left: 4px;
+      border-bottom: 3px solid #8ebf42;
+      border-left: 3px solid #8ebf42;
+      transform: rotate(-45deg);
+      opacity: 0;
+      }
+      input[type=radio]:checked + label:after {
+      opacity: 1;
+      }
+      textarea {
+      width: 99%;
+      margin-bottom: 12px;
+      }
+      button {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px; 
+      border: none;
+      background: #8ebf42; 
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      }
+      button:hover {
+      background: #82b534;
+      }
+      .grade-type-Feedback div {
+      display: flex;
+      margin: 6px 0;
+      }
+      @media (min-width: 568px) {
+      .info-Feedback {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      }
+      .info-item-Feedback {
+      width: 48%;   
+      }
+      }
+      
+   
+/*About Us*/
+.about
+{
+    width:100%;
+    padding: 78px 0px;
+    background-color: #191919;
+}
+
+.about-text 
+{
+    width: 650px;
+
+}
+.main
+{
+    width: 1130px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.about-text h1
+{   
+    color: white;
+    font-size: 70px;
+    text-transform:capitalize;
+    margin-bottom: 20px;
+    
+}
+.about-text h5
+{
+    color:white;
+    font-size: 25px;
+    text-transform:capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-text span
+{
+    color: #f9004d;
+}
+
+.about-text p
+{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    text-transform:capitalize;
+    margin-bottom: 45px;
+    text-align:justify
+}
